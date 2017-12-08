@@ -1,4 +1,18 @@
+import path from 'path';
 import webpack from 'webpack';
+
+import HtmlCriticalPlugin from "html-critical-webpack-plugin";
+
+import { PATHS, ROOT } from '../config';
+
+const critical = new HtmlCriticalPlugin({
+  base: path.join(ROOT, PATHS.get('dist')),
+  src: 'index.html',
+  dest: 'index.html',
+  inline: true,
+  minify: true,
+  extract: true
+});
 
 const uglify = new webpack.optimize.UglifyJsPlugin();
 
@@ -14,6 +28,7 @@ const manifest = new webpack.optimize.CommonsChunkPlugin({
 });
 
 export {
+  critical,
   uglify,
   commons,
   manifest

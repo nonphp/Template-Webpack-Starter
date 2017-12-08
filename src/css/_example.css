@@ -1,0 +1,56 @@
+.header {
+  background-color: var(--gray);
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__link {
+  display: block;
+  padding: 1.5rem;
+  color: var(--white);
+}
+
+.container {
+  margin: auto;
+  width: 80vw;
+}
+
+.jumbotron {
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.my-photo-album {
+  padding: 4rem 0;
+  background-color: var(--grayLightest);
+}
+
+.album {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 1rem;
+	align-content: center;
+	align-items: center;
+	justify-items: start;
+
+  @media (--minMd) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  padding: 0.5rem;
+  background-color: var(--white);
+}
+
+.footer {
+  padding: 1.5rem 0;
+  font-size: 0.875rem;
+  color: var(--grayLight);
+}

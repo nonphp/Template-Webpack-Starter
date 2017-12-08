@@ -1,8 +1,7 @@
 * SVG Sprites
 * Critical CSS
 
-* Fix styles for stylelint
-* Stylelint ignore css from node_modules
+* Uncomment stylelint
 
 * Remove test image
 * Clean out SVG directory so template is basic
@@ -12,3 +11,4 @@
 * make nicer base files
 
 * Create a basic component pug file
+* Pug changes dont refresh page

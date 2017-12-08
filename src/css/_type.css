@@ -1,9 +1,6 @@
 /* Typography
  * ------------------------------*/
-@import "_variables.css";
-
 h1, h2, h3, h4, h5, h6 {
-    /*!critical*/
 	font-family: var(--headingsFontFamily);
 	font-weight: var(--headingsFontWeight);
 	line-height: var(--headingsLineHeight);
@@ -12,9 +9,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    /*!critical*/
 	font-size: var(--fontSizeH1);
-	margin-bottom: 1.5rem;
 }
 
 h2 {
@@ -35,10 +30,4 @@ h5 {
 
 h6 {
 	font-size: var(--fontSizeH6);
-}
-
-.list-unstyled {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
 }
