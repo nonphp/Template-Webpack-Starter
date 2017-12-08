@@ -1,0 +1,75 @@
+{
+  "name": "template-webpack-starter",
+  "version": "1.0.0",
+  "author": "Jason Cockerham <jason@jcock.rocks>",
+  "description": "A webpack 3 starter with babel (es6), eslint, postcss, stylelint, pug, and more.",
+  "homepage": "https://github.com/jcock/Template-Webpack-Starter",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jcock/Template-Webpack-Starter"
+  },
+  "bugs": {
+    "url": "https://github.com/jcock/jcock.rocks/issues",
+    "email": "jason@jcock.rocks"
+  },
+  "engines": {
+    "node": ">=6.9.0"
+  },
+  "main": "app.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --config=config/index.babel.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config=config/index.babel.js"
+  },
+  "keywords": [],
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "caniuse-lite": "^1.0.30000770",
+    "chalk": "^2.3.0",
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.2.3",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "css-mqpacker": "^6.0.1",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.5.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "generate-robotstxt": "^5.0.1",
+    "git-rev-sync": "^1.9.1",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.30.1",
+    "image-webpack-loader": "^3.4.2",
+    "postcss": "^6.0.14",
+    "postcss-cssnext": "^3.0.2",
+    "postcss-import": "^11.0.0",
+    "postcss-loader": "^2.0.9",
+    "postcss-remove-root": "0.0.2",
+    "postcss-reporter": "^5.0.0",
+    "pug-html-loader": "^1.1.5",
+    "sitemap-webpack-plugin": "^0.5.1",
+    "style-loader": "^0.19.0",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0",
+    "svg-sprite-loader": "^3.4.1",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.6",
+    "webpack-merge": "^4.1.1"
+  },
+  "dependencies": {
+    "es6-promise": "^4.1.1",
+    "gutenberg-css": "^0.4.4",
+    "sanitize.css": "^5.0.0",
+    "whatwg-fetch": "^2.0.3"
+  }
+}

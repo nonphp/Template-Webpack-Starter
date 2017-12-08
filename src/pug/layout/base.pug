@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+  head
+    block page-title
+      title Template-Webpack-Starter
+    include ../base/meta
+
+  block vars
+    - var bodyClasses = '';
+
+  body(class=bodyClasses)
+    .page
+      include ../objects/header
+      .content
+        block page-content
+
+      include ../objects/footer
+
+
+
