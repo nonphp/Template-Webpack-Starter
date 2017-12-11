@@ -7,7 +7,8 @@ import { NODE_ENV } from './config';
 import { clean } from './plugins/clean';
 import { sitemap } from './plugins/sitemap';
 import { copyStatic } from './plugins/assets';
-import { htmlIndex } from './plugins/html';
+import { htmlIndex, scriptExt } from './plugins/html';
+import { offline } from './plugins/offline';
 import { critical, uglify, commons, manifest } from './plugins/optimize';
 import {
   define,
@@ -28,11 +29,13 @@ export default [
   NODE_ENV === 'development' ? namedModules : hashedModuleIds,
   htmlIndex,
   NODE_ENV === 'production' ? extractCSS : 0,
-  NODE_ENV === 'production' ? uglify : 0,
   NODE_ENV === 'production' ? critical : 0,
+  NODE_ENV === 'production' ? uglify : 0,
+  NODE_ENV === 'production' ? scriptExt : 0,
   commons,
   manifest,
   NODE_ENV === 'production' ? copyStatic : 0,
   NODE_ENV === 'production' ? sitemap : 0,
-  NODE_ENV === 'production' ? banner : 0
+  NODE_ENV === 'production' ? banner : 0,
+  NODE_ENV === 'production' ? offline : 0
 ].filter(Boolean);

@@ -33,5 +33,3 @@ const scripts = {
 };
 
 export { scripts };
-
-// ESLINT / PRETTIER?

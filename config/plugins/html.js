@@ -1,9 +1,10 @@
-import path from "path";
-import fs from "fs";
+import path from 'path';
+import fs from 'fs';
 
-import HtmlWebpackPlugin from "html-webpack-plugin";
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import ScriptExtension from 'script-ext-html-webpack-plugin';
 
-import { NODE_ENV } from "../config";
+import { NODE_ENV } from '../config';
 
 const minifyOptions = {
   caseSensitive: false,
@@ -28,7 +29,7 @@ const minifyOptions = {
   preserveLineBreaks: false,
   preventAttributesEscaping: false,
   processConditionalComments: true,
-  processScripts: ["text/html"],
+  processScripts: ['text/html'],
   quoteCharacter: '"',
   removeAttributeQuotes: true,
   removeComments: true,
@@ -46,10 +47,15 @@ const minifyOptions = {
 };
 
 const htmlIndex = new HtmlWebpackPlugin({
-  filename: "index.html",
+  filename: 'index.html',
   template: 'pug/index.pug',
   NODE_ENV: NODE_ENV,
   minify: minifyOptions
 });
 
-export { htmlIndex };
+const scriptExt =  new ScriptExtension ({
+  defer: 'main',
+  defaultAttribute: 'async'
+});
+
+export { htmlIndex, scriptExt };
