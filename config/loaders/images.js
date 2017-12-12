@@ -40,7 +40,17 @@ const svg = {
       loader: 'svg-sprite-loader',
       options: {
         extract: true,
-        spriteFilename: 'sprite.svg'
+        spriteFilename: 'img/sprite.svg'
+      }
+    },
+    {
+      loader: 'image-webpack-loader',
+      options: {
+        svgo: {
+          removeTitle: true,
+          convertColors: {shorthex: false},
+          convertPathData: false
+        }
       }
     }
   ]

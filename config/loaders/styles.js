@@ -1,7 +1,7 @@
 import path from 'path';
 
 import postcssImport from 'postcss-import';
-// import stylelint from 'stylelint';
+import stylelint from 'stylelint';
 import postcssReporter from 'postcss-reporter';
 import postcssCssnext from 'postcss-cssnext';
 import postcssRemoveRoot from 'postcss-remove-root';

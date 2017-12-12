@@ -13,6 +13,8 @@ TWS is a Webpack 3, ES6, PostCSS, and Pug boilerplate that utilizes some of the 
   * [MQPacker](https://github.com/hail2u/node-css-mqpacker)
   * [PostCSS Import](https://github.com/postcss/postcss-import)
   * [stylelint](https://github.com/stylelint/stylelint)
+* [PurifyCSS](https://github.com/purifycss/purifycss)
+* [Critical](https://github.com/addyosmani/critical)
 * ...and more!
 
 ## Getting started

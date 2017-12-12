@@ -3,7 +3,7 @@ import glob from 'glob';
 import webpack from 'webpack';
 
 import PurifyCSSPlugin from 'purifycss-webpack';
-const CriticalPlugin = require('webpack-plugin-critical').CriticalPlugin;
+import { CriticalPlugin as CriticalPlugin } from 'webpack-plugin-critical';
 
 import { PATHS, ROOT } from '../config';
 

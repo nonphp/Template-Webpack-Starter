@@ -3,6 +3,8 @@ import webpack from "webpack";
 
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
+import SpriteLoaderPlugin from 'svg-sprite-loader/plugin';
+
 import { PATHS, ROOT } from '../config';
 
 const copyStatic = new CopyWebpackPlugin([
@@ -13,4 +15,9 @@ const copyStatic = new CopyWebpackPlugin([
   }
 ]);
 
-export { copyStatic };
+const svgSprite = new SpriteLoaderPlugin();
+
+export {
+  copyStatic,
+  svgSprite
+};
