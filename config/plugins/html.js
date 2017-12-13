@@ -1,6 +1,5 @@
 import path from 'path';
 import fs from 'fs';
-
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import ScriptExtension from 'script-ext-html-webpack-plugin';
 

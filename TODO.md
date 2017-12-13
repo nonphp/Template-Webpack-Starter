@@ -1,5 +1,3 @@
-* SVG Sprites
-
 * Uncomment stylelint
 
 * Remove test image

@@ -1,5 +1,4 @@
 import CleanWebpackPlugin from 'clean-webpack-plugin';
-
 import { PATHS, ROOT } from "../config";
 
 let pathsToClean = [

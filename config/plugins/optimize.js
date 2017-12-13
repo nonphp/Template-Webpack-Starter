@@ -1,11 +1,12 @@
 import path from 'path';
 import glob from 'glob';
 import webpack from 'webpack';
-
+import HardSourceWebpackPlugin from 'hard-source-webpack-plugin';
 import PurifyCSSPlugin from 'purifycss-webpack';
 import { CriticalPlugin as CriticalPlugin } from 'webpack-plugin-critical';
-
 import { PATHS, ROOT } from '../config';
+
+const hardSource = new HardSourceWebpackPlugin();
 
 const purify = new PurifyCSSPlugin({
   paths: glob.sync(path.join(ROOT, PATHS.get('src'), '**/*.pug'))
@@ -33,6 +34,7 @@ const manifest = new webpack.optimize.CommonsChunkPlugin({
 });
 
 export {
+  hardSource,
   purify,
   critical,
   uglify,

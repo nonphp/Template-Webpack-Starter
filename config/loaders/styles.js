@@ -1,5 +1,4 @@
 import path from 'path';
-
 import postcssImport from 'postcss-import';
 import stylelint from 'stylelint';
 import postcssReporter from 'postcss-reporter';
@@ -7,9 +6,7 @@ import postcssCssnext from 'postcss-cssnext';
 import postcssRemoveRoot from 'postcss-remove-root';
 import cssMqpacker from 'css-mqpacker';
 import cssnano from 'cssnano';
-
 import { PATHS, ROOT, NODE_ENV, BROWSERS } from '../config';
-
 import { extractCSS } from '../plugins';
 
 const styleLoader = {

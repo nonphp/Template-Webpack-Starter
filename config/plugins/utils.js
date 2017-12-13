@@ -1,7 +1,6 @@
 import fs from "fs";
 import path from "path";
 import webpack from "webpack";
-
 import { NODE_ENV, ROOT, PATHS, BANNER } from "../config";
 
 const define = new webpack.DefinePlugin({

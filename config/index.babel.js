@@ -1,11 +1,9 @@
-import { NODE_ENV, ROOT, PATHS } from './config';
-
 import path from 'path';
 import webpack from 'webpack';
-
 import devServer from './server';
 import rules from "./rules";
 import plugins from './plugins';
+import { NODE_ENV, ROOT, PATHS } from './config';
 
 export default {
   context: path.join(ROOT, PATHS.get('src')),
@@ -25,7 +23,7 @@ export default {
     path: path.join(ROOT, PATHS.get('dist')),
     pathinfo: NODE_ENV === 'development',
     publicPath: '/',
-    sourceMapFilename: 'js/[file].map',
+    sourceMapFilename: 'map/[file].map',
     sourcePrefix: '\t'
   },
   devServer,
