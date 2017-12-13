@@ -45,5 +45,5 @@ export default [
   svgSprite,
   NODE_ENV === 'production' ? sitemap : 0,
   NODE_ENV === 'production' ? banner : 0,
-  NODE_ENV === 'production' ? offline : 0
+  NODE_ENV === 'production' ? offline : 0,
 ].filter(Boolean);

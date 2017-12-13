@@ -25,5 +25,6 @@ export {
   HMR,
   namedModules,
   hashedModuleIds,
-  banner
+  banner,
+  messages
 };
